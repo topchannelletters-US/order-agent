@@ -1,0 +1,64 @@
+{
+  "timezone": "America/Chicago",
+  "gmail": {
+    "client_secret_file": "data/cache/secrets/google-oauth-client.json",
+    "token_file": "data/cache/secrets/google-oauth-token.json",
+    "accounts": [
+      {
+        "email": "topchannelletters@gmail.com",
+        "token_file": "data/cache/secrets/gmail-token-topchannelletters.json"
+      },
+      {
+        "email": "sales@topchannelletters.com",
+        "token_file": "data/cache/secrets/gmail-token-sales.json"
+      }
+    ],
+    "user_id": "me",
+    "query_excludes": "-in:spam -category:promotions -from:(noreply OR no-reply OR mailer-daemon)"
+  },
+  "google_sheet": {
+    "spreadsheet_id": "1hUnKfOltyw2bzMEad__PmMB294osvA4yBYOFuY_Qx9Q",
+    "sheet_name": "招牌进度表2026_NEW",
+    "sheet_id": 116918616,
+    "data_range": "A1:J500",
+    "status_col": 1,
+    "phone_col": 2,
+    "customer_col": 3,
+    "business_col": 4,
+    "address_col": 5,
+    "started_date_col": 6,
+    "memo_col": 8,
+    "email_col": 9
+  },
+  "orders": {
+    "workbook": "data/orders.xlsx",
+    "sheet": "Orders",
+    "history_sheet": "History"
+  },
+  "sync_state": "data/sync_state.json",
+  "cache_dir": "data/cache",
+  "reports_dir": "reports",
+  "minimum_confidence_for_auto_update": 80,
+  "project_id": {
+    "format": "YYYY-NNNN",
+    "year": 2026
+  },
+  "design_types": [
+    "Storefront Sign",
+    "Channel Letters",
+    "Window Graphics",
+    "Monument Sign",
+    "Lobby Sign",
+    "Wayfinding",
+    "Vinyl Graphics",
+    "Cabinet Sign",
+    "Pylon Sign",
+    "ADA Signage",
+    "Awning",
+    "Blade Sign",
+    "Canopy",
+    "Menu Board",
+    "LED Retrofit",
+    "Unknown / Review"
+  ]
+}

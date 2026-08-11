@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.tcl.orderagent.daily</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>-lc</string>
+    <string>cd "/Users/admin/.tcl-order-agent/order-agent" &amp;&amp; /usr/bin/python3 scripts/daily_google_sheet_sync.py &gt;&gt; data/cache/daily-google-sheet-sync.log 2&gt;&amp;1</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>17</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/admin/.tcl-order-agent/order-agent/data/cache/launchd-daily-sync.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/admin/.tcl-order-agent/order-agent/data/cache/launchd-daily-sync.err.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>
